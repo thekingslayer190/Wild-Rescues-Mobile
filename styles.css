@@ -1,0 +1,133 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fcfcfc;
+    
+}
+
+.container {
+    max-width: 480px;
+    margin: auto;
+    background-image: linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url("images/bacground.png");
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 20px;
+    max-width: fit-content;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f1011;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #ffffff;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        width: 200px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: aliceblue;
+    }
+    .content p{
+        font-size: 16px;
+        color: #e5e5e5;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .Btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
